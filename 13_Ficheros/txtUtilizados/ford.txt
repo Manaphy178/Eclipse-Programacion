@@ -1,0 +1,5 @@
+V1010PB;ford;Probe 2.0 16V;Blanco;
+V3543NC;ford;Escort 1.6 Ghia;Rojo;
+V4578OB;ford;Orion 1.8 Ghia;Negro;Aire Acondicionado
+V7642OU;ford;Mondeo 1.8 GLX;Blanco;
+V8018LJ;ford;Fiesta 1.4 CLX;Azul;Elevalunas el�ctricos

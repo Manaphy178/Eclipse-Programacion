@@ -1,0 +1,44 @@
+package Ejer07;
+
+import java.util.Scanner;
+
+public class Ejercicio5 {
+
+	public static void main(String[] args) {
+		Scanner sn = new Scanner(System.in);
+		int[] array1 = new int[5];
+		int[] array2 = new int[5];
+		int impar = 0;
+		for (int i = 0; i < array1.length; i++) {
+			System.out.println("Dime numeros");
+			array1[i] = sn.nextInt();
+			if (array1[i] % 2 != 0) {
+				impar++;
+			}
+		}
+		for (int i = 0; i < array2.length; i++) {
+			System.out.println("Dime otros numeros");
+			array2[i] = sn.nextInt();
+			if (array2[i] % 2 != 0) {
+				impar++;
+			}
+		}
+		int[] array3 = new int[impar];
+		impar = 0;
+		for (int i = 0; i < array1.length; i++) {
+			if (array1[i] % 2 != 0) {
+				array3[impar] = array1[i];
+				impar++;
+			}
+		}
+		for (int i = 0; i < array2.length; i++) {
+			if (array2[i] % 2 != 0) {
+				array3[impar] = array2[i];
+				impar++;
+			}
+		}
+		for (int i = 0; i < array3.length; i++) {
+			System.out.println(array3[i]);
+		}
+	}
+}

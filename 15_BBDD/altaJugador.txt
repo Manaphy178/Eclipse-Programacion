@@ -1,0 +1,4 @@
+Michael Jordan::Illinois::G::224::6-6::Bulls
+Javier Gonzalez::Madrid::E::160::6-0::Lakers
+Sergio Prados::LaCama::S::120::6-1::Lakers
+Brandan Wright::AA::F::205::6-9::Warriors

@@ -1,0 +1,15 @@
+Nombre: Clippers | Ciudad: Los Angeles | Conferencia: West | Division: Pacific
+Nombre: Grizzlies | Ciudad: Memphis | Conferencia: West | Division: SouthWest
+Nombre: Hornets | Ciudad: New Orleans | Conferencia: West | Division: SouthWest
+Nombre: Jazz | Ciudad: Utah | Conferencia: West | Division: NorthWest
+Nombre: Kings | Ciudad: Sacramento | Conferencia: West | Division: Pacific
+Nombre: Lakers | Ciudad: Los Angeles | Conferencia: West | Division: Pacific
+Nombre: Mavericks | Ciudad: Dallas | Conferencia: West | Division: SouthWest
+Nombre: Nuggets | Ciudad: Denver | Conferencia: West | Division: NorthWest
+Nombre: Rockets | Ciudad: Houston | Conferencia: West | Division: SouthWest
+Nombre: Spurs | Ciudad: San Antonio | Conferencia: West | Division: SouthWest
+Nombre: Suns | Ciudad: Phoenix | Conferencia: West | Division: Pacific
+Nombre: Supersonics | Ciudad: Seattle | Conferencia: West | Division: NorthWest
+Nombre: Timberwolves | Ciudad: Minnesota | Conferencia: West | Division: NorthWest
+Nombre: Trail Blazers | Ciudad: Portland | Conferencia: West | Division: NorthWest
+Nombre: Warriors | Ciudad: Golden State | Conferencia: West | Division: Pacific

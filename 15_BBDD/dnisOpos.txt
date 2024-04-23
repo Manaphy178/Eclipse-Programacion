@@ -1,0 +1,8 @@
+Nombre: IVAN	DNI: 01811458K	Ciudad: Madrid	Telefono: 666898745
+Nombre: JA	DNI: 02811458K	Ciudad: León	Telefono: 666898777
+Nombre: LUISJO	DNI: 03334585K	Ciudad: Segovia	Telefono: 766898745
+Nombre: HECTOR	DNI: 09777458K	Ciudad: Burgos	Telefono: 966898745
+Nombre: BRUNO	DNI: 09811444K	Ciudad: Valladolid	Telefono: 266898745
+Nombre: RULO	DNI: 09811458K	Ciudad: Madrid	Telefono: 666898755
+Nombre: PELICANO	DNI: 09991458K	Ciudad: Soria	Telefono: 866898745
+Nombre: LALO	DNI: 88811458K	Ciudad: Madrid	Telefono: 666898742
