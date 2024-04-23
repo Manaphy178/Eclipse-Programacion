@@ -132,65 +132,72 @@
 			
 
 			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Listados</h3>
-								<ul class="links">
-									<li><a href="jugadores.asp">Listado de Ligas</a></li>
-									
-								
-								</ul>
-							</section>
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Más Opciones</h3>
-								<ul class="links">
-									<li><a href="operaciones.jsp?tipo=altaJugador">Opción 1</a></li>
-									
-								</ul>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<h3>Solicita Información</h3>
-								<form>
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Enviar Email" /></li>
-											</ul>
-										</div>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Listados</h3>
+							<ul class="links">
+								<li><a href="jugadores.jsp">Listado de Jugadores</a></li>
+								<li><a href="equipos.jsp">Listado de Equipos</a></li>
+								<li><a href="ligas.jsp">Listado de Ligas</a></li>
+							
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Más Opciones</h3>
+							<ul class="links">
+								<li><a href="altajugador.jsp">Alta Jugador</a></li>
+								<li><a href="altaequipo.jsp">Alta Equipo</a></li>
+								<li><a href="altaliga.jsp">Alta Liga</a></li>
+								<li><a href="altacarta.jsp">Alta Carta</a></li>
+								<li><a href="modificarjugador1.jsp">Modificar Jugador</a></li>
+								<li><a href="modificarequipo1.jsp">Modificar Equipo</a></li>
+								<li><a href="modificarliga1.jsp">Modificar Liga</a></li>
+								<li><a href="modificarcarta1.jsp">Modificar Carta</a></li>
+							</ul>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<h3>Solicita Información</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
-								</form>
-							</section>
-						</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Enviar Email" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; FIFA 23. Todos los derechos reservados</li><li>Design: <a href="https://www.centronelson.org">Centro Nelson</a></li>
+						</ul>
 					</div>
 
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						</ul>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; FIFA 23. Todos los derechos reservados</li><li>Design: <a href="https://www.centronelson.org">Centro Nelson</a></li>
-							</ul>
-						</div>
-
-				</div>
+			</div>
 
 		</div>
 

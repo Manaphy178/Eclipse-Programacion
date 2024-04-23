@@ -9,6 +9,8 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/dd.css">
+	<link rel="stylesheet" href="assets/css/flags.css">
 	<title>Proyecto Web FIFA23</title>
 </head>
 
@@ -100,28 +102,30 @@
 								<form action="./operaciones.jsp?tipo=altajugador" method="post">
 									<div class="row gtr-50">
 										<div class="">
-											<input type="text" name="nombre" id="nombre" placeholder="Nombre del jugador" style="width:450px" maxlength="20" />
+											<input type="text" name="nombre" id="nombre" placeholder="Nombre del jugador" style="width:450px" maxlength="20" required/>
 										</div>
 										<div class="">
-											<select name="pierna" id="pierna" >
+											<select name="pierna" id="pierna" required data-child-height="415" is="ms-dropdown">
+												<option value="">Selecciona una pierna</option>
 												<option value="Izquierda">Izquierda</option>
 												<option value="Derecha">Derecha</option>
 											</select>
 											<!-- <input type="text" name="pierna" id="pierna" placeholder="Pierna buena del jugador" maxlength="9" /> -->
 										</div>
 										<div class="">
-										<select name="equipo" id="equipo" >
+										<select name="equipo" id="equipo" required style="width: 450px;" is="ms-dropdown" data-child-height="415">
+											<option value=""data-description="">Selecciona un equipo</option>
 										<%for (Equipo e: bd.todosEquipos()){ %>
-											<option value="<%=e.getCodE()%>"><%=e.getNombre() %></option>
+											<option value="<%=e.getCodE()%>" data-image="./images/equipos/<%=e.getCodE()%>.png"><%=e.getNombre() %></option>
 											<%} %>
 										</select>
 									
 										</div>
 										<div class="">
-											<input type="text" name="pais" id="pais" placeholder="Pais del jugador" maxlength="20" />
+											<input type="text" name="pais" id="pais" placeholder="Pais del jugador" maxlength="20" required />
 										</div>
 										<div class="">
-											<input type="number" name="altura" id="altura" placeholder="Altura del jugador" max="280"/>
+											<input type="number" name="altura" id="altura" placeholder="Altura del jugador" max="280" required/>
 										</div>
 												
 									</div>
@@ -141,72 +145,72 @@
 				</section>
 										
 			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Listados</h3>
-								<ul class="links">
-									<li><a href="jugadores.asp">Listado de Jugadores</a></li>
-									<li><a href="equipos.asp">Listado de Equipos</a></li>
-									<li><a href="ligas.asp">Listado de Ligas</a></li>
-								
-								</ul>
-							</section>
-							<section class="col-3 col-6-narrower col-12-mobilep">
-								<h3>Más Opciones</h3>
-								<ul class="links">
-									<li><a href="altaJugador.jsp">Alta Jugador</a></li>
-									<li><a href="altaEquipo.jsp">Alta Equipo</a></li>
-									<li><a href="altaLiga.jsp">Alta Liga</a></li>
-									<li><a href="altaCarta.jsp">Alta Carta</a></li>
-									<li><a href="modifiJugador.jsp">Modificar Jugador</a></li>
-									<li><a href="modifiEquipo.jsp">Modificar Equipo</a></li>
-									<li><a href="modifiLiga.jsp">Modificar Liga</a></li>
-									<li><a href="modifiCarta.jsp">Modificar Carta</a></li>
-								</ul>
-							</section>
-							<section class="col-6 col-12-narrower">
-								<h3>Solicita Información</h3>
-								<form>
-									<div class="row gtr-50">
-										<div class="col-6 col-12-mobilep">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="col-6 col-12-mobilep">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="col-12">
-											<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-										</div>
-										<div class="col-12">
-											<ul class="actions">
-												<li><input type="submit" class="button alt" value="Enviar Email" /></li>
-											</ul>
-										</div>
+			<div id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Listados</h3>
+							<ul class="links">
+								<li><a href="jugadores.jsp">Listado de Jugadores</a></li>
+								<li><a href="equipos.jsp">Listado de Equipos</a></li>
+								<li><a href="ligas.jsp">Listado de Ligas</a></li>
+							
+							</ul>
+						</section>
+						<section class="col-3 col-6-narrower col-12-mobilep">
+							<h3>Más Opciones</h3>
+							<ul class="links">
+								<li><a href="altajugador.jsp">Alta Jugador</a></li>
+								<li><a href="altaequipo.jsp">Alta Equipo</a></li>
+								<li><a href="altaliga.jsp">Alta Liga</a></li>
+								<li><a href="altacarta.jsp">Alta Carta</a></li>
+								<li><a href="modificarjugador1.jsp">Modificar Jugador</a></li>
+								<li><a href="modificarequipo1.jsp">Modificar Equipo</a></li>
+								<li><a href="modificarliga1.jsp">Modificar Liga</a></li>
+								<li><a href="modificarcarta1.jsp">Modificar Carta</a></li>
+							</ul>
+						</section>
+						<section class="col-6 col-12-narrower">
+							<h3>Solicita Información</h3>
+							<form>
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobilep">
+										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
-								</form>
-							</section>
-						</div>
+									<div class="col-6 col-12-mobilep">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button alt" value="Enviar Email" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+
+				<!-- Icons -->
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+
+				<!-- Copyright -->
+					<div class="copyright">
+						<ul class="menu">
+							<li>&copy; FIFA 23. Todos los derechos reservados</li><li>Design: <a href="https://www.centronelson.org">Centro Nelson</a></li>
+						</ul>
 					</div>
 
-					<!-- Icons -->
-						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
-						</ul>
-
-					<!-- Copyright -->
-						<div class="copyright">
-							<ul class="menu">
-								<li>&copy; FIFA 23. Todos los derechos reservados</li><li>Design: <a href="https://www.centronelson.org">Centro Nelson</a></li>
-							</ul>
-						</div>
-
-				</div>
+			</div>
 
 		</div>
 
@@ -219,7 +223,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/index.js"></script>
 			<script src="assets/js/dropdown.js"></script>
-
+			<script src="assets/js/dd.min.js"></script>
 </body>
 
 </html>
