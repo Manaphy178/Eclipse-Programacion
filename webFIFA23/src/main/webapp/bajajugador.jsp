@@ -9,6 +9,8 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/dd.css">
+	<link rel="stylesheet" href="assets/css/flags.css">
 	<title>Proyecto Web FIFA23</title>
 </head>
 
@@ -27,7 +29,6 @@
 
 					<!-- Logo -->
 						<h1><a href="index.jsp" id="logo">FIFA23</a></h1>
-
 					<!-- Nav -->
 					<nav id="nav">
 						<ul>
@@ -99,9 +100,10 @@
 								<form action="./operaciones.jsp?tipo=Bajajugador" method="post">
 									<div class="row gtr-50">
 										<div class="">
-											<select name="codigo" id="codigo">
+											<select name="codigo" id="codigo" required style="width: 450px;" is="ms-dropdown" data-child-height="415">
+												<option value="" data-description="">Selecciona un jugador</option>
 												<%for(Jugador j : bd.todosJugadores()){ %>
-													<option value="<%=j.getCodJ()%>"><%=j.getNombre() %></option>
+													<option value="<%=j.getCodJ()%>" data-image="./images/jugadores/<%=j.getCodJ()%>.png"><%=j.getNombre() %></option>
 													<%} %>
 											</select>
 										</div>
@@ -200,6 +202,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/index.js"></script>
 			<script src="assets/js/dropdown.js"></script>
+			<script src="assets/js/dd.min.js"></script>
 
 </body>
 

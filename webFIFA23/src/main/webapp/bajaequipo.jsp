@@ -9,6 +9,8 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/dd.css">
+	<link rel="stylesheet" href="assets/css/flags.css">
 	<title>Proyecto Web FIFA23</title>
 </head>
 
@@ -99,9 +101,10 @@
 								<form action="./operaciones.jsp?tipo=Bajaequipo" method="post">
 									<div class="row gtr-50">
 										<div class="">
-										<select name="codigo" id="codigo">
+											<select name="codigo" id="codigo" required style="width: 450px;" is="ms-dropdown" data-child-height="415">
+												<option value="" data-description="">Selecciona un equipo</option>
 											<%for (Equipo e: bd.todosEquipos()){ %>
-												<option value="<%=e.getCodE()%>"><%=e.getNombre() %></option>
+												<option value="<%=e.getCodE()%>" data-image="./images/equipos/<%=e.getCodE()%>.png"><%=e.getNombre() %></option>
 												<%} %>
 										</select>
 											
@@ -201,6 +204,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/index.js"></script>
 			<script src="assets/js/dropdown.js"></script>
+			<script src="assets/js/dd.min.js"></script>
 
 </body>
 
